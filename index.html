@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+	<title>Simple Sudoku</title>
+	<meta name="description" content="Simple sudoku game">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="main">
+		<table id="bo" align="center">
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		</table>
+		
+		<table id="buttons" align="center">
+			<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+			<tr><td>6</td><td>7</td><td>8</td><td>9</td><td style="background-color: rgba(224,44,98)">X</td></tr>
+		</table>
+	</div>
+	<div id="congrats">
+		<p>Sudoku Solved!</p>
+		<div id="again">Play again</div>
+	</div>
+
+	<script src="fillBoard.js"></script>
+	<script src="putBlanks.js"></script>
+	<script src="checkForWin.js"></script>
+	<script src="gameMain.js"></script>
+</body>
+</html>
